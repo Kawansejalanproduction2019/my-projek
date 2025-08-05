@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Buku Alkarbook</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .horizontal-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .category-item {
+            padding: 15px 25px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background-color 0.2s;
+        }
+        .category-item:hover {
+            background-color: #e0e0e0;
+        }
+        .category-item.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .list-view {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-top: 20px;
+        }
+        .list-view-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .list-view-item:hover {
+            transform: translateY(-5px);
+        }
+        .book-image {
+            width: 80px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .book-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .book-title {
+            font-weight: bold;
+            font-size: 1em;
+            margin: 0;
+        }
+        .book-meta {
+            font-size: 0.9em;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading-screen" style="text-align: center; padding-top: 50px;">
+        <p>Memuat konten...</p>
+    </div>
+
+    <div id="main-content" style="display:none;">
+        <h2>Kategori Buku</h2>
+        <div id="category-container" class="horizontal-scroll"></div>
+        <h2>Daftar Buku</h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari buku...">
+        </div>
+        <div id="book-list-container" class="list-view">
+            <p>Silakan pilih kategori di atas.</p>
+        </div>
+    </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBOctb2J8nw1Nayl-isG1BANeS1fws32Sw",
+            authDomain: "alkarbook.firebaseapp.com",
+            databaseURL: "https://alkarbook.firebaseio.com",
+            projectId: "alkarbook",
+            storageBucket: "alkarbook.appspot.com",
+            messagingSenderId: "1011179539542",
+            appId: "1:1011179539542:android:48ce1aa72d1c59f5c47ff7"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        const auth = firebase.auth();
+
+        const loadingScreen = document.getElementById('loading-screen');
+        const mainContent = document.getElementById('main-content');
+        const categoryContainer = document.getElementById('category-container');
+        const bookListContainer = document.getElementById('book-list-container');
+        const searchInput = document.getElementById('search-input');
+
+        let booksData = [];
+        
+        // Fungsi untuk memuat kategori dari path "apps/update/kelas"
+        function loadCategories() {
+            console.log("Mengambil data kategori dari database...");
+            const categoriesRef = database.ref('apps/update/kelas');
+            categoriesRef.once('value', (snapshot) => {
+                const categoriesString = snapshot.val();
+                console.log("Data kategori (string) berhasil diambil:", categoriesString);
+                categoryContainer.innerHTML = '';
+                
+                if (categoriesString && typeof categoriesString === 'string') {
+                    try {
+                        const categories = JSON.parse(categoriesString);
+                        console.log("Data kategori (objek) berhasil diurai:", categories);
+
+                        Object.values(categories).forEach(category => {
+                            if (category && category.jenis && category.string) {
+                                const item = document.createElement('div');
+                                item.className = 'category-item';
+                                item.textContent = category.jenis;
+                                item.dataset.bookPath = category.string;
+                                item.onclick = () => {
+                                    document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active'));
+                                    item.classList.add('active');
+                                    
+                                    const bookPath = category.string;
+                                    loadBooksByCategoryPath(bookPath);
+                                };
+                                categoryContainer.appendChild(item);
+                            }
+                        });
+                    } catch (e) {
+                        console.error("Gagal mengurai JSON:", e);
+                        categoryContainer.innerHTML = '<p>Gagal memproses data kategori. Periksa format JSON.</p>';
+                    }
+                } else {
+                    categoryContainer.innerHTML = '<p>Kategori tidak ditemukan atau formatnya salah.</p>';
+                }
+            }).catch(error => {
+                console.error("Gagal mengambil data kategori:", error);
+                loadingScreen.innerHTML = `<p>Gagal mengambil data kategori. Error: ${error.message}</p>`;
+            });
+        }
+
+        // Fungsi untuk memuat buku berdasarkan path yang diberikan
+        function loadBooksByCategoryPath(bookPath) {
+            console.log("Mengambil data buku dari path:", bookPath);
+            const booksRef = database.ref(bookPath);
+            booksRef.once('value', (snapshot) => {
+                const books = snapshot.val();
+                booksData = books ? Object.values(books) : [];
+                console.log("Data buku berhasil diambil:", booksData);
+                
+                renderBooks(booksData);
+            }).catch(error => {
+                console.error("Gagal mengambil data buku:", error);
+                bookListContainer.innerHTML = '<p>Gagal mengambil data buku. Pastikan pathnya benar dan aturan keamanannya sudah sesuai.</p>';
+            });
+        }
+
+        // Fungsi untuk menampilkan daftar buku
+        function renderBooks(booksToRender) {
+            bookListContainer.innerHTML = '';
+            if (booksToRender.length > 0) {
+                booksToRender.forEach(book => {
+                    if (book && book.namabuku) {
+                        const item = document.createElement('div');
+                        item.className = 'list-view-item';
+                        item.onclick = () => {
+                            if (book.pdfurl) {
+                                window.open(book.pdfurl, '_self');
+                            } else {
+                                alert('Link PDF tidak tersedia untuk buku ini.');
+                            }
+                        };
+                        
+                        const image = document.createElement('img');
+                        image.className = 'book-image';
+                        image.src = book.urlimg || 'https://buku.kemdikbud.go.id/assets/image/catalog/book-placeholder.jpg';
+                        image.alt = book.namabuku;
+                        
+                        const details = document.createElement('div');
+                        details.className = 'book-details';
+                        
+                        const title = document.createElement('p');
+                        title.className = 'book-title';
+                        title.textContent = book.namabuku;
+                        
+                        const meta = document.createElement('p');
+                        meta.className = 'book-meta';
+                        meta.innerHTML = `Kelas: ${book.kelas} | Kurikulum: ${book.kurikulum}<br>${book.deskripsi}`;
+                        
+                        details.appendChild(title);
+                        details.appendChild(meta);
+                        item.appendChild(image);
+                        item.appendChild(details);
+
+                        bookListContainer.appendChild(item);
+                    }
+                });
+            } else {
+                bookListContainer.innerHTML = '<p>Tidak ada buku yang ditemukan.</p>';
+            }
+        }
+        
+        // Fungsi untuk mencari buku
+        function searchBooks() {
+            const query = searchInput.value.toLowerCase();
+            const filteredBooks = booksData.filter(book => 
+                book.namabuku && book.namabuku.toLowerCase().includes(query)
+            );
+            renderBooks(filteredBooks);
+        }
+
+        // Fungsi untuk login otomatis dengan kredensial yang ditentukan
+        function autoLogin() {
+            const email = "dederahmanhakim0407@gmail.com";
+            const password = "Rahmanhakim0407";
+            console.log("Mencoba login otomatis...");
+
+            auth.signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    console.log("Login otomatis berhasil!", userCredential.user.uid);
+                })
+                .catch((error) => {
+                    console.error("Login otomatis gagal:", error.code, error.message);
+                    loadingScreen.innerHTML = `<p>Gagal login otomatis. Pastikan kredensial benar. Error: ${error.message}</p>`;
+                });
+        }
+        
+        // Listener untuk memantau status autentikasi
+        auth.onAuthStateChanged((user) => {
+            console.log("Status autentikasi berubah. User:", user ? user.uid : 'null');
+            if (user) {
+                loadingScreen.style.display = 'none';
+                mainContent.style.display = 'block';
+                loadCategories();
+            } else {
+                autoLogin();
+            }
+        });
+    </script>
+</body>
+</html>
