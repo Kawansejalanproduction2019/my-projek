@@ -123,7 +123,6 @@
 
         let booksData = [];
         
-        // Fungsi untuk memuat kategori dari path "apps/update/kelas"
         function loadCategories() {
             console.log("Mengambil data kategori dari database...");
             const categoriesRef = database.ref('apps/update/kelas');
@@ -166,7 +165,6 @@
             });
         }
 
-        // Fungsi untuk memuat buku berdasarkan path yang diberikan
         function loadBooksByCategoryPath(bookPath) {
             console.log("Mengambil data buku dari path:", bookPath);
             const booksRef = database.ref(bookPath);
@@ -182,7 +180,6 @@
             });
         }
 
-        // Fungsi untuk menampilkan daftar buku
         function renderBooks(booksToRender) {
             bookListContainer.innerHTML = '';
             if (booksToRender.length > 0) {
@@ -192,7 +189,7 @@
                         item.className = 'list-view-item';
                         item.onclick = () => {
                             if (book.pdfurl) {
-                                window.open(book.pdfurl, '_self');
+                                Android.openNativePdfViewer(book.pdfurl);
                             } else {
                                 alert('Link PDF tidak tersedia untuk buku ini.');
                             }
@@ -227,7 +224,6 @@
             }
         }
         
-        // Fungsi untuk mencari buku
         function searchBooks() {
             const query = searchInput.value.toLowerCase();
             const filteredBooks = booksData.filter(book => 
@@ -236,7 +232,6 @@
             renderBooks(filteredBooks);
         }
 
-        // Fungsi untuk login otomatis dengan kredensial yang ditentukan
         function autoLogin() {
             const email = "dederahmanhakim0407@gmail.com";
             const password = "Rahmanhakim0407";
@@ -252,7 +247,6 @@
                 });
         }
         
-        // Listener untuk memantau status autentikasi
         auth.onAuthStateChanged((user) => {
             console.log("Status autentikasi berubah. User:", user ? user.uid : 'null');
             if (user) {
