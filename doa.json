@@ -214,5 +214,45 @@
     "latin": "Ya Muqallibal quloob thabbit qalbi 'ala deenik.",
     "translation_id": "Wahai Dzat yang membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu. (HR. Tirmidzi)",
     "translation_en": "O Controller of the hearts, make my heart steadfast on Your religion. (Narrated by Tirmidhi)"
+  },
+  {
+    "title_id": "Doa Kebaikan Dunia dan Akhirat (Sapu Jagad)",
+    "title_en": "Prayer for Goodness in This World and the Hereafter",
+    "arabic": "رَبَّنَآ اٰتِنَا فِى الدُّنْيَا حَسَنَةً وَّفِى الْاٰخِرَةِ حَسَنَةً وَّقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbanā ātinā fid-dunyā ḥasanataw wa fil-ākhirati ḥasanataw wa qinā ‘adhāban-nār.",
+    "translation_id": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+    "translation_en": "Our Lord, grant us good in this world and good in the Hereafter, and save us from the punishment of the Fire."
+  },
+  {
+    "title_id": "Doa Keteguhan Iman",
+    "title_en": "Prayer for Steadfastness in Faith",
+    "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ اِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَّدُنْكَ رَحْمَةً ۚ اِنَّكَ اَنْتَ الْوَهَّابُ",
+    "latin": "Rabbanā lā tuzigh qulūbanā ba‘da idh hadaitanā wa hab lanā mil ladunka raḥmah, innaka antal-Wahhāb.",
+    "translation_id": "Ya Tuhan kami, janganlah Engkau condongkan hati kami kepada kesesatan setelah Engkau berikan petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu, sesungguhnya Engkau Maha Pemberi.",
+    "translation_en": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower."
+  },
+  {
+    "title_id": "Doa Nabi Yunus (Memohon Ampunan & Pertolongan)",
+    "title_en": "Prayer of Prophet Yunus (Supplication for Forgiveness)",
+    "arabic": "لَآ اِلٰهَ اِلَّآ اَنْتَ سُبْحٰنَكَ اِنِّيْ كُنْتُ مِنَ الظّٰلِمِيْنَ",
+    "latin": "Lā ilāha illā Anta subḥānaka innī kuntu minaẓ-ẓālimīn.",
+    "translation_id": "Tidak ada tuhan selain Engkau, Maha Suci Engkau. Sungguh, aku termasuk orang-orang yang zalim.",
+    "translation_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."
+  },
+  {
+    "title_id": "Doa Memohon Ilmu, Rezeki, dan Amal",
+    "title_en": "Prayer for Knowledge, Sustenance, and Accepted Deeds",
+    "arabic": "اَللّٰهُمَّ اِنِّيْ اَسْئَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا",
+    "latin": "Allāhumma innī as’aluka ‘ilman nāfi‘an wa rizqan ṭayyiban wa ‘amalan mutaqabbalan.",
+    "translation_id": "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.",
+    "translation_en": "O Allah, indeed I ask You for beneficial knowledge, good provision, and deeds that will be accepted."
+  },
+  {
+    "title_id": "Doa untuk Kedua Orang Tua",
+    "title_en": "Prayer for Parents",
+    "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "latin": "Rabbighfir lī wa liwālidayya warḥamhumā kamā rabbayānī ṣaghīrā.",
+    "translation_id": "Ya Tuhanku, ampunilah aku dan kedua orang tuaku, dan sayangilah mereka sebagaimana mereka telah mendidik aku di waktu kecil.",
+    "translation_en": "My Lord, forgive me and my parents and have mercy upon them as they brought me up [when I was] small."
   }
 ]
