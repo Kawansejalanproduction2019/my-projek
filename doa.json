@@ -78,5 +78,37 @@
     "latin": "Allāhumma innī as’alukal-hudā wat-tuqā wal-‘afāfa wal-ghinā.",
     "translation_id": "Ya Allah, sesungguhnya aku memohon kepada-Mu petunjuk, ketakwaan, kehormatan (kesucian diri), dan kecukupan (kekayaan jiwa).",
     "translation_en": "O Allah, I ask You for guidance, piety, chastity (purity), and contentment (self-sufficiency)."
+  },
+  {
+    "title_id": "Doa Sapu Jagat (Memohon Kebaikan Dunia dan Akhirat)",
+    "title_en": "The Comprehensive Prayer (Seeking Good in This World and the Hereafter)",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbana atina fid dunya hasanah wa fil akhirati hasanah wa qina adhaban nar.",
+    "translation_id": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa api neraka.",
+    "translation_en": "Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire."
+  },
+  {
+    "title_id": "Doa Memohon Petunjuk, Ketakwaan, Kesucian, dan Kecukupan",
+    "title_en": "Prayer for Guidance, Piety, Chastity, and Self-Sufficiency",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+    "latin": "Allahumma inni as'alukal huda wat tuqa wal 'afafa wal ghina.",
+    "translation_id": "Ya Allah, sesungguhnya aku memohon kepada-Mu petunjuk, ketakwaan, kesucian diri, dan kecukupan.",
+    "translation_en": "O Allah, indeed I ask You for guidance, piety, chastity, and self-sufficiency."
+  },
+  {
+    "title_id": "Doa Memohon Ketetapan Hati di Atas Agama",
+    "title_en": "Prayer for Steadfastness Upon Religion",
+    "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+    "latin": "Ya Muqallibal qulub, thabbit qalbi 'ala dinik.",
+    "translation_id": "Wahai Dzat yang membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu.",
+    "translation_en": "O Changer of the hearts, make my heart firm upon Your religion."
+  },
+  {
+    "title_id": "Doa Memohon Kelapangan Dada dan Kemudahan Urusan",
+    "title_en": "Prayer for Serenity and Ease of Affairs",
+    "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي",
+    "latin": "Rabbish rahli sadri wa yassirli amri.",
+    "translation_id": "Ya Tuhanku, lapangkanlah dadaku, dan mudahkanlah untukku urusanku.",
+    "translation_en": "My Lord, expand for me my breast [with assurance] and ease for me my task."
   }
 ]
