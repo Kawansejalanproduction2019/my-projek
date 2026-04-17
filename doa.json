@@ -1,18 +1,42 @@
 [
   {
-    "title_id": "Doa Sebelum Tidur",
-    "title_en": "Prayer Before Sleeping",
-    "arabic": "بِاسْمِكَ اللَّهُمَّ أَحْيَا وَأَمُوتُ",
-    "latin": "Bismika allahumma ahyaa wa amuut",
-    "translation_id": "Dengan nama-Mu ya Allah, aku hidup dan aku mati.",
-    "translation_en": "In Your name, O Allah, I live and I die."
+    "title_id": "Doa Kebaikan Dunia dan Akhirat",
+    "title_en": "Prayer for Good in This World and the Hereafter",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbanā ātinā fi ad-dunyā ḥasanatan wa fī al-ākhirati ḥasanatan wa qinā ‘adhāba an-nār.",
+    "translation_id": "Ya Tuhan kami, berikanlah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab api neraka.",
+    "translation_en": "Our Lord, grant us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire."
   },
   {
-    "title_id": "Doa Bangun Tidur",
-    "title_en": "Prayer Upon Waking Up",
-    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرُ",
-    "latin": "Alhamdu lillahil ladzii ahyaanaa ba'da maa amaatanaa wa ilaihin nusyuur",
-    "translation_id": "Segala puji bagi Allah yang telah menghidupkan kami setelah mematikan kami, dan kepada-Nya kami kembali.",
-    "translation_en": "Praise be to Allah Who has given us life after causing us to die, and to Him is the resurrection."
+    "title_id": "Doa Memohon Ampunan (Lailatul Qadar)",
+    "title_en": "Prayer for Forgiveness (Laylatul Qadr)",
+    "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+    "latin": "Allāhumma innaka ‘afuwwun tuḥibbu al-‘afwa fa‘fu ‘annī.",
+    "translation_id": "Ya Allah, sesungguhnya Engkau Maha Pemaaf dan Engkau mencintai pemaafan, maka maafkanlah aku.",
+    "translation_en": "O Allah, indeed You are Forgiving, You love forgiveness, so forgive me."
+  },
+  {
+    "title_id": "Doa Nabi Yunus (Mohon Pertolongan dalam Kesulitan)",
+    "title_en": "Prophet Yunus's Prayer (Seeking Help in Distress)",
+    "arabic": "لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+    "latin": "Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn.",
+    "translation_id": "Tiada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.",
+    "translation_en": "There is no deity except You; exalted are You. Indeed, I have been among the wrongdoers."
+  },
+  {
+    "title_id": "Doa Berlindung dari Kesusahan dan Kesedihan",
+    "title_en": "Prayer for Refuge from Anxiety and Sorrow",
+    "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ",
+    "latin": "Allāhumma innī a‘ūdhu bika mina al-hammi wa al-ḥazan.",
+    "translation_id": "Ya Allah, sesungguhnya aku berlindung kepada-Mu dari kesusahan dan kesedihan.",
+    "translation_en": "O Allah, I seek refuge in You from anxiety and sorrow."
+  },
+  {
+    "title_id": "Doa Memohon Ampunan dan Kesejahteraan Dunia Akhirat",
+    "title_en": "Prayer for Forgiveness and Well-being in This World and the Hereafter",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+    "latin": "Allāhumma innī as’aluka al-‘afwa wa al-‘āfiyah fi ad-dunyā wa al-ākhirah.",
+    "translation_id": "Ya Allah, sesungguhnya aku memohon kepada-Mu ampunan dan keselamatan di dunia dan di akhirat.",
+    "translation_en": "O Allah, I ask You for forgiveness and well-being in this world and the Hereafter."
   }
 ]
