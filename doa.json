@@ -110,5 +110,37 @@
     "latin": "Rabbish rahli sadri wa yassirli amri.",
     "translation_id": "Ya Tuhanku, lapangkanlah dadaku, dan mudahkanlah untukku urusanku.",
     "translation_en": "My Lord, expand for me my breast [with assurance] and ease for me my task."
+  },
+  {
+    "title_id": "Doa Setelah Makan",
+    "title_en": "Prayer After Eating",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+    "latin": "Alḥamdu lillāhi-l-ladhī aṭ‘amanā wa saqānā wa ja‘alanā muslimīn.",
+    "translation_id": "Segala puji bagi Allah yang telah memberi kami makan dan minum, serta menjadikan kami orang-orang Muslim.",
+    "translation_en": "All praise is due to Allah Who fed us and gave us drink and made us Muslims."
+  },
+  {
+    "title_id": "Doa Bangun Tidur",
+    "title_en": "Prayer Upon Waking Up",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "latin": "Alḥamdu lillāhi-l-ladhī aḥyānā ba‘da mā amātanā wa ilayhi-n-nushūr.",
+    "translation_id": "Segala puji bagi Allah yang telah menghidupkan kami setelah mematikan kami, dan kepada-Nyalah kami akan kembali.",
+    "translation_en": "All praise is due to Allah Who gave us life after having caused us to die and unto Him is the resurrection."
+  },
+  {
+    "title_id": "Doa Keluar Rumah",
+    "title_en": "Prayer When Leaving Home",
+    "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ",
+    "latin": "Bismillāhi tawakkaltu ‘ala Allāhi wa lā ḥawla wa lā quwwata illā billāh.",
+    "translation_id": "Dengan nama Allah, aku bertawakal kepada Allah, tiada daya dan upaya kecuali dengan pertolongan Allah.",
+    "translation_en": "In the name of Allah, I have placed my trust in Allah; there is no might and no power except with Allah."
+  },
+  {
+    "title_id": "Doa Memohon Ilmu Bermanfaat, Rezeki Halal, dan Amal Diterima",
+    "title_en": "Prayer for Beneficial Knowledge, Good Provision, and Accepted Deeds",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
+    "latin": "Allāhumma innī as’aluka ‘ilman nāfi‘an, wa rizqan ṭayyiban, wa ‘amalan mutaqabbalan.",
+    "translation_id": "Ya Allah, sungguh aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.",
+    "translation_en": "O Allah, I ask You for beneficial knowledge, good provision, and accepted deeds."
   }
 ]
