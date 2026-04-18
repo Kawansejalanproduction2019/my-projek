@@ -494,5 +494,21 @@
     "latin": "Yā Muqallibal-qulūbi thabbit qalbī ‘alā dīnik",
     "translation_id": "Wahai Zat yang membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu.",
     "translation_en": "O Turner of the hearts, keep my heart steadfast upon Your religion."
+  },
+  {
+    "title_id": "Doa Memohon Ilmu",
+    "title_en": "Supplication for Knowledge",
+    "arabic": "رَبِّ زِدْنِي عِلْمًا",
+    "latin": "Rabbi zidni 'ilma.",
+    "translation_id": "Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.",
+    "translation_en": "My Lord, increase me in knowledge."
+  },
+  {
+    "title_id": "Doa Pengakuan Dosa (Nabi Yunus)",
+    "title_en": "Supplication of Prophet Yunus (Jonah)",
+    "arabic": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+    "latin": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin.",
+    "translation_id": "Tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku adalah termasuk orang-orang yang zalim.",
+    "translation_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."
   }
 ]
