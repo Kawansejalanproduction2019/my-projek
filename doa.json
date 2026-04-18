@@ -510,5 +510,21 @@
     "latin": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin.",
     "translation_id": "Tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku adalah termasuk orang-orang yang zalim.",
     "translation_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."
+  },
+  {
+    "title_id": "Doa Kelapangan Hati dan Urusan",
+    "title_en": "Prayer for Clarity and Ease",
+    "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي يَفْقَهُوا قَوْلِي",
+    "latin": "Rabbish-rahli sadri wa yassir li amri wahlul 'uqdatan min lisani yafqahu qawli",
+    "translation_id": "Ya Tuhanku, lapangkanlah untukku dadaku, dan mudahkanlah untukku urusanku, dan lepaskanlah kekakuan dari lidahku, supaya mereka mengerti perkataanku.",
+    "translation_en": "My Lord, expand for me my breast [with assurance] and ease for me my task and untie the knot from my tongue that they may understand my speech."
+  },
+  {
+    "title_id": "Doa Memohon Ampunan dan Kasih Sayang",
+    "title_en": "Prayer for Forgiveness and Mercy",
+    "arabic": "رَبِّ اغْفِرْ وَارْحَمْ وَأَنْتَ خَيْرُ الرَّاحِمِينَ",
+    "latin": "Rabbighfir warham wa anta khairur-rahimin",
+    "translation_id": "Ya Tuhanku, ampunilah dan berilah rahmat, Engkaulah pemberi rahmat yang terbaik.",
+    "translation_en": "My Lord, forgive and have mercy, and You are the best of the merciful."
   }
 ]
