@@ -597,5 +597,21 @@
     "latin": "Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn",
     "translation_id": "Tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku adalah termasuk orang-orang yang zalim.",
     "translation_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."
+  },
+  {
+    "title_id": "Doa Memohon Petunjuk dan Kesucian Diri",
+    "title_en": "Prayer for Guidance and Purity",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+    "latin": "Allāhumma innī as’alukal-hudā wat-tuqā wal-‘afāfa wal-ghinā.",
+    "translation_id": "Ya Allah, sesungguhnya aku memohon kepada-Mu petunjuk, ketakwaan, kesucian (menjaga diri dari yang haram), dan kecukupan (kekayaan hati).",
+    "translation_en": "O Allah, indeed I ask You for guidance, piety, abstinence (chastity/purity), and self-sufficiency (contentment)."
+  },
+  {
+    "title_id": "Doa Memohon Bantuan dalam Beribadah",
+    "title_en": "Prayer for Assistance in Worship",
+    "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+    "latin": "Allāhumma a‘innī ‘alā dhikrika wa shukrika wa ḥusni ‘ibādatika.",
+    "translation_id": "Ya Allah, bantulah aku untuk senantiasa mengingat-Mu, bersyukur kepada-Mu, dan beribadah kepada-Mu dengan sebaik-baiknya.",
+    "translation_en": "O Allah, help me to remember You, to be grateful to You, and to worship You in the best manner."
   }
 ]
