@@ -717,5 +717,37 @@
     "latin": "Subhanallahi wa bihamdihi, Subhanallahil 'Adheem.",
     "translation_id": "Maha Suci Allah dengan segala puji bagi-Nya, Maha Suci Allah Yang Maha Agung.",
     "translation_en": "Glorified be Allah and praised be He, Glorified be Allah the Most Great."
+  },
+  {
+    "title_id": "Doa Setelah Bangun Tidur",
+    "title_en": "Prayer Upon Waking Up",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "latin": "Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur.",
+    "translation_id": "Segala puji bagi Allah yang telah menghidupkan kami setelah mematikan kami, dan kepada-Nya lah kami akan kembali.",
+    "translation_en": "All praise is due to Allah, who has given us life after causing us to die, and to Him is the resurrection."
+  },
+  {
+    "title_id": "Doa Masuk Masjid",
+    "title_en": "Prayer Upon Entering the Mosque",
+    "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+    "latin": "Allahummaf-tah li abwaba rahmatik.",
+    "translation_id": "Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu.",
+    "translation_en": "O Allah, open for me the gates of Your mercy."
+  },
+  {
+    "title_id": "Doa Sapu Jagat (Kebaikan Dunia & Akhirat)",
+    "title_en": "Comprehensive Prayer (Goodness in This World & Hereafter)",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbana atina fid dunya hasanah, wa fil akhirati hasanah, wa qina 'adzaban nar.",
+    "translation_id": "Ya Tuhan kami, berikanlah kepada kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari siksa api neraka.",
+    "translation_en": "Our Lord, grant us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire."
+  },
+  {
+    "title_id": "Doa Agar Istiqamah dalam Agama",
+    "title_en": "Prayer for Steadfastness in Religion",
+    "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+    "latin": "Ya Muqallibal qulub, thabbit qalbi 'ala dinik.",
+    "translation_id": "Wahai Dzat yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu.",
+    "translation_en": "O Changer of the hearts, keep my heart firm on Your religion."
   }
 ]
